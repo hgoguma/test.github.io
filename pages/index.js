@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import Test from '../component/test'
-import styles from '../styles/Home.module.scss'
+import Test from 'component/test'
+import styles from 'styles/Home.module.scss'
 
 export default function Home() {
 

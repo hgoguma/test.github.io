@@ -1,5 +1,5 @@
 import React, { useState, useCallback } from 'react'
-import styles from '../styles/Home.module.scss'
+import styles from 'styles/Home.module.scss'
 
 
 export default function Test() {
@@ -45,7 +45,6 @@ export default function Test() {
 
     return (
         <div className={styles.test}>
-            <p>step : {step}</p>
             {testObjArr.map((item, idx) => 
                 {
                     if(idx === step) {
