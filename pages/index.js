@@ -20,13 +20,9 @@ export default function Home() {
         </div>
         : null
       }
-      
 
       {/* Test */}
       { isTestStart ? <Test /> : null }
-      
-      
-      
 
       <footer className={styles.footer}>
         <p>Footer</p>
