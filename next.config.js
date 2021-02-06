@@ -6,8 +6,8 @@ module.exports = {
 
         return config
     },
-  sassOptions: {
-    includePaths: [path.join(__dirname, 'styles')],
-    
-  },
+    sassOptions: {
+        includePaths: [path.join(__dirname, 'styles')],
+    },
+    assetPrefix: 'https://github.com/hgoguma/test.github.io'
 }
