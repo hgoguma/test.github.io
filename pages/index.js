@@ -24,9 +24,9 @@ export default function Home() {
       {/* Test */}
       { isTestStart ? <Test /> : null }
 
-      <footer className={styles.footer}>
+      {/* <footer className={styles.footer}>
         <p>Footer</p>
-      </footer>
+      </footer> */}
     </div>
   )
 }

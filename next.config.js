@@ -8,5 +8,5 @@ module.exports = {
     sassOptions: {
         includePaths: [path.join(__dirname, 'styles')],
     },
-    // assetPrefix: 'https://github.com/hgoguma/test.github.io'
+    assetPrefix: 'https://hgoguma.github.io/test.github.io/'
 }
