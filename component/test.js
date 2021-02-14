@@ -5,6 +5,7 @@ import styles from 'styles/Home.module.scss'
 export default function Test() {
 
     const [step, setStep] = useState(0)
+    const [progressBarWidth, setProgressBarWidth] = useState(0)
 
     const testObjArr = [
         {
@@ -36,20 +37,24 @@ export default function Test() {
         }
         
         //옵션 저장 필요
-        
+
         //step 올리기
         setStep(step+1)
 
-        
+        setProgressBarWidth((step+2) / testObjArr.length)
+
     }, [step])
 
     return (
         <div className={styles.test}>
+
+            
             {testObjArr.map((item, idx) => 
                 {
                     if(idx === step) {
                         return (
                             <div key={idx}>
+                                <p>Step : {step}</p>
                                 {/* question */}
                                 <div className={styles.question}>
                                     <h5>{item.question}</h5>
@@ -71,9 +76,11 @@ export default function Test() {
             {/* question-progress */}
             <div className={styles.progress}>
                 <div className={styles.progressBar}>
+                    <div className={styles.progressStatus} style={{width: `${progressBarWidth} + %`}}></div>
                 </div>
                 <h5 className={styles.questionCount}> {step + 1} / {testObjArr.length} </h5>
             </div>
+            <p> {progressBarWidth} </p>
         </div>
     )
 

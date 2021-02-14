@@ -30,3 +30,8 @@ export default function Home() {
     </div>
   )
 }
+
+<style>
+
+
+</style>

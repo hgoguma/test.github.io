@@ -1,12 +1,10 @@
 const path = require('path')
+const isProd = process.env.NODE_ENV !== "production";
+
 
 module.exports = {
-    // webpack: config => {
-    //     config.resolve.modules.push(path.resolve('./'))
-    //     return config
-    // },
     sassOptions: {
         includePaths: [path.join(__dirname, 'styles')],
     },
-    assetPrefix: 'https://hgoguma.github.io/test.github.io/'
+    assetPrefix: !isProd ? 'https://hgoguma.github.io/test.github.io/' : ''
 }
